@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTC-8">
+            <title>Nationality Requesition</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <h1 id="title">Nationality Requesition Form</h1>
+            <p id="description">Please fill the fields bellow whit responsability.</p>
+            <form id="survey-form" action="">
+                <div class="form-group">
+                    <Label for="name" id="name-label">Full Name: </Label>
+                    <input id="name" type="text" required placeholder="John Snow" class="input-control">
+                </div>
+                <div class="form-group">
+                    <Label for="email" id="email-label">Email: </Label>
+                    <input id="email" type="email" required placeholder="your@email.com" class="input-control">
+                </div>
+                <div class="form-group">
+                    <Label for="number" id="number-label">Age: </Label>
+                    <input id="number" type="number" min="21" max="80" placeholder="20" class="input-control">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="dropdown" name="dropdown" id="dropdown" class="input-control">
+                        <option disabled selected value>Select one</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="nationality">Nationality: </label>
+                        <input type="radio" name="nationality" value="National" class="input-radio" checked> National
+                        <input type="radio" name="nationality" value="Foreign" class="input-radio"> Foreign
+                </div>
+                <div>
+                    <label for="docs">Select which documents you have:
+                        <input type="checkbox" id="docs" value="ID">ID
+                        <input type="checkbox" id="docs" value="Passport">Passport
+                        <input type="checkbox" id="docs" value="Drive-License">Drive License
+                        <input type="checkbox" id="docs" value="Brith-Certificate">Birth Certificate
+                    </label>
+                </div>
+                <div>
+                    <label for="textarea">
+                        <textarea id="request" name="request" placeholder="Leave your request here.">
+                        </textarea>
+                    </label>
+                </div>
+            </fieldset>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+            </form>
+        </body>
+    </html>
